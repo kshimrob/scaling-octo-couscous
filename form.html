@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <style>
+    	fieldset {
+    		max-width: 450px;
+    	}
+    </style>
+  </head>
+  <body>
+  	<form action="" post="get">
+  		<fieldset>
+  			<dl>
+		  		<dt><label for="name"> Your Name: </label></dt>
+		  		<dd><input type="text" name="name" id="name" autocomplete="given-name" required /></dd>
+		  		<dt><label for="email"> Email: </label></dt>
+		  		<!-- Shows email keyboard for things like IOS -->
+		  		<dd><input type="email" name="email" id="email" autocomplete="email" required /></dd>
+		  		<dt><label for ="phone">Phone Number: </label></dt>
+		  		<dd><input type="tel" name="phone" id="phone" autocomplete="tel" maxlength="10" required /> </dd>
+		  			<dt><label for="message">Message: </label></dt>
+		  		<dd><textarea name="message" cols="40" rows="10" name="message" id="message" required></textarea></dd>
+		  		<br>
+	  		</dl>
+	  		<input type="submit" value="Send Message" />
+        <!-- Triggers an action by browser by using type="reset" -->
+		  	<input type="reset" value="Clear" />
+	  	</fieldset>
+  	</form>
+
+  </body>
+</html> 
